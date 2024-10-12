@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: WooCommerce Frontend Product Editor
-Description: Edit main product information from the frontend for variable products.
-Version: 1.3
-Author: Your Name
+Description: Edit main product information from the frontend for simple and variable products.
+Version: 1.6
+Author: github.com/jonsts
 Text Domain: wc-frontend-product-editor
 */
 
@@ -16,7 +16,7 @@ add_action( 'wp_enqueue_scripts', 'wc_fpe_enqueue_scripts' );
 function wc_fpe_enqueue_scripts() {
     if ( is_product() && current_user_can( 'edit_products' ) ) {
         wp_enqueue_style( 'wc-fpe-styles', plugin_dir_url( __FILE__ ) . 'css/wc-fpe-styles.css' );
-        wp_enqueue_script( 'wc-fpe-scripts', plugin_dir_url( __FILE__ ) . 'js/wc-fpe-scripts.js', array( 'jquery' ), '1.5', true );
+        wp_enqueue_script( 'wc-fpe-scripts', plugin_dir_url( __FILE__ ) . 'js/wc-fpe-scripts.js', array( 'jquery' ), '1.6', true );
         wp_localize_script( 'wc-fpe-scripts', 'wc_fpe_ajax', array(
             'ajaxurl' => admin_url( 'admin-ajax.php' ),
         ) );
@@ -30,8 +30,6 @@ function wc_fpe_enqueue_scripts() {
     }
 }
 
-
-
 // Enqueue Dashicons in the frontend
 add_action( 'wp_enqueue_scripts', 'wc_fpe_enqueue_dashicons' );
 function wc_fpe_enqueue_dashicons() {
@@ -39,7 +37,6 @@ function wc_fpe_enqueue_dashicons() {
         wp_enqueue_style( 'dashicons' );
     }
 }
-
 
 // Display edit icon next to the product title and include the dialog
 add_action( 'woocommerce_single_product_summary', 'wc_fpe_display_edit_icon', 6 );
@@ -50,8 +47,8 @@ function wc_fpe_display_edit_icon() {
 
     global $product;
 
-    // Display the edit icon for variable products
-    if ( $product->is_type( 'variable' ) ) {
+    // Display the edit icon for simple and variable products
+    if ( $product->is_type( 'variable' ) || $product->is_type( 'simple' ) ) {
         $post_id    = $product->get_id();
         $title      = get_the_title( $post_id );
         $short_desc = $product->get_short_description();

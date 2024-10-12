@@ -53,15 +53,15 @@ The **WooCommerce Frontend Product Editor** plugin allows users with the appropr
 
 1. **Download the Plugin:**
 
-   - Clone the repository or [download the latest release](https://github.com/jonsts/wc-frontend-product-editor/releases).
+   - Clone the repository or [download the latest release](https://github.com/jonsts/woocommerce-frontend-editor/releases).
 
 2. **Upload the Plugin:**
 
-   - Upload the `wc-frontend-product-editor` folder to the `/wp-content/plugins/` directory.
+   - Upload the `woocommerce-frontend-editor` folder to the `/wp-content/plugins/` directory.
 
      **OR**
 
-   - Compress the `wc-frontend-product-editor` folder into a `.zip` file.
+   - Compress the `woocommerce-frontend-editor` folder into a `.zip` file.
    - In your WordPress admin dashboard, navigate to **Plugins > Add New > Upload Plugin** and upload the `.zip` file.
 
 3. **Activate the Plugin:**
@@ -160,4 +160,4 @@ Contributions are welcome! Please follow these steps:
 2. **Clone Your Fork:**
 
    ```bash
-   git clone https://github.com/jonsts/wc-frontend-product-editor.git
+   git clone https://github.com/jonsts/woocommerce-frontend-editor.git

@@ -25,14 +25,13 @@
 
 ## Description
 
-The **WooCommerce Frontend Product Editor** plugin allows users with the appropriate permissions to edit the main information of variable products directly from the frontend of your WooCommerce store. This streamlines the editing process by eliminating the need to navigate to the WordPress admin dashboard.
+The **WooCommerce Frontend Product Editor** plugin allows users with the appropriate permissions to edit the main information of simple and variable products directly from the frontend of your WooCommerce store. This streamlines the editing process by eliminating the need to navigate to the WordPress admin dashboard.
 
 ---
 
 ## Features
 
-- **Frontend Editing:** Edit product title, short description, and long description without accessing the backend.
-- **Support for Variable Products:** Specifically designed to work with variable products, editing the parent product information.
+- **Frontend Editing:** Edit product title, short description, and long description without accessing the backend for both simple and variable products.
 - **Rich Text Editor:** Utilize the WordPress TinyMCE editor for rich text formatting.
 - **User Permissions:** Only users with the `edit_products` capability (e.g., Administrators, Shop Managers) can edit products.
 - **Modal Dialog Interface:** Clean and user-friendly modal dialog using the HTML `<dialog>` element.
@@ -73,15 +72,15 @@ The **WooCommerce Frontend Product Editor** plugin allows users with the appropr
 
 ## Usage
 
-### Editing a Variable Product
+### Editing a Product
 
 1. **Ensure Proper Permissions:**
 
    - You must be logged in as a user with the `edit_products` capability (e.g., Administrator or Shop Manager).
 
-2. **Navigate to a Variable Product Page:**
+2. **Navigate to a Product Page:**
 
-   - On the frontend of your WooCommerce store, go to a product page of a variable product you wish to edit.
+   - On the frontend of your WooCommerce store, go to a product page of a product you wish to edit.
 
 3. **Locate the Edit Icon:**
 
@@ -135,13 +134,9 @@ The **WooCommerce Frontend Product Editor** plugin allows users with the appropr
 
 Only users with the `edit_products` capability, such as Administrators and Shop Managers, can edit products using this plugin.
 
-### 2. **Does this plugin support simple products?**
-
-Currently, the plugin is designed to work with variable products, allowing you to edit the parent product information. Support for simple products may be added in future updates.
-
 ### 3. **Why am I not seeing the edit icon on the product page?**
 
-Ensure that you are logged in with a user account that has the necessary permissions. Also, verify that the product is a variable product.
+Ensure that you are logged in with a user account that has the necessary permissions.
 
 ### 4. **The rich text editor is not appearing; what should I do?**
 

@@ -1,0 +1,49 @@
+/* Dialog Styles */
+#wc-fpe-modal {
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+#wc-fpe-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#wc-fpe-form h3 {
+    margin-top: 0;
+}
+
+#wc-fpe-form label {
+    font-weight: bold;
+}
+
+#wc-fpe-form input[type="text"],
+#wc-fpe-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Set minimum height for textareas */
+#wc-fpe-form textarea {
+    min-height: 150px;
+}
+
+/* Spinner Styles */
+#wc-fpe-spinner {
+    display: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#wc-fpe-spinner img {
+    width: 20px;
+    height: 20px;
+}
+/* Adjust editor container within the modal */
+#wc-fpe-modal .wp-editor-wrap {
+    margin-bottom: 15px;
+}

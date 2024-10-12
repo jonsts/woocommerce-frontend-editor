@@ -90,12 +90,18 @@ The **WooCommerce Frontend Product Editor** plugin allows users with the appropr
 4. **Open the Edit Modal:**
 
    - Click on the pencil icon to open the edit modal dialog.
+  
+![wc-frontend-editor-2](https://github.com/user-attachments/assets/bb0f7da4-337d-4430-9646-e5df07ad5392)
+
 
 5. **Edit Product Information:**
 
    - **Product Title:** Modify the product's title as needed.
    - **Short Description:** Use the rich text editor to edit the short description.
    - **Description:** Use the rich text editor to edit the long description.
+
+![wc-frontend-editor-1](https://github.com/user-attachments/assets/21e209ae-8950-4f3a-b0ee-cb6a016aada5)
+
 
 6. **Save Changes:**
 

@@ -13,7 +13,6 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Changelog](#changelog)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Contributing](#contributing)
